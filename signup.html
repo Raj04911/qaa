@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="bg-white p-3 rounded w-25 form_container">
+            <h2 class="d-flex justify-content-center">Create Account</h2>
+            <form id="signup-form">
+                <div class="mb-2">
+                    <label for="name"><strong>Name</strong></label>
+                    <input type="text" placeholder="Enter Name" class="form-control rounded-0" name="name" id="name">
+                    <span id="name-error" class="text-danger"></span>
+                </div>
+                <div class="mb-2">
+                    <label for="phone"><strong>Phone No.</strong></label>
+                    <input type="tel" placeholder="Enter Pnone No." class="form-control rounded-0" name="phone" id="phone">
+                    <span id="phone-error" class="text-danger"></span>
+                </div>
+                <div class="mb-2">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" placeholder="Enter Email" class="form-control rounded-0" name="email" id="email">
+                    <span id="email-error" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="password"><strong>Password</strong></label>
+                    <input type="password" placeholder="Enter Password" class="form-control rounded-0" name="password" id="password">
+                    <span id="password-error" class="text-danger"></span>
+                </div>
+                <button type="button" id="signup-button" class="btn btn-success w-100 rounded-0">Sign Up</button>
+                <p>You agree with our terms and conditions.</p>
+                <a href="login.html" class="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">Login</a>
+            </form>
+        </div>
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Change Example</title>
+</head>
+<body>
+    <h2>Click the button to change the image</h2>
+    <img id="image" src="https://via.placeholder.com/300?text=Image+1" alt="Initial Image" width="300">
+    <button onclick="changeElement()">Change Image</button>
+
+    <script>
+        function changeElement() {
+            var img = document.getElementById("image");
+            img.src = "https://via.placeholder.com/300?text=Image+2";
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Change Example</title>
+</head>
+<body>
+    <h2>Click the button to change the image</h2>
+
+    <!-- Image element with initial source "image.1" -->
+    <img id="image" src="https://via.placeholder.com/300?text=Image+1" alt="Initial Image" width="300">
+
+    <!-- Button to trigger the change -->
+    <button onclick="changeElement()">Change Image</button>
+
+    <script>
+        // JavaScript function to alternate the image source
+        function changeElement() {
+            // Get the image element by its ID
+            var img = document.getElementById("image");
+
+            // Check current source and alternate
+            if (img.src.includes("Image+1")) {
+                img.src = "https://via.placeholder.com/300?text=Image+2";
+            } else {
+                img.src = "https://via.placeholder.com/300?text=Image+1";
+            }
+        }
+    </script>
+</body>
+</html>
